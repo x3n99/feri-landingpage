@@ -15,16 +15,47 @@ const services = [
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#292a22" />
-    <meta name="description" content="Jasa pembuatan website oleh Feri Juliansyah." />
+    <meta
+      name="description"
+      content="Jasa pembuatan website modern, responsif, dan sesuai kebutuhan oleh Feri Juliansyah."
+    />
+
     <title>FERI.DEV — Web Developer</title>
+
+    <!-- Open Graph: WhatsApp link preview -->
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
     <meta property="og:title" content="FERI.DEV — Web Developer" />
-    <meta property="og:description" content="Jasa pembuatan website modern, responsif, dan sesuai kebutuhan." />
-    <meta property="og:url" content="https://feri-landingpage.vercel.app/" />
-    <meta property="og:image" content="https://feri-landingpage.vercel.app/images/feri-logo.png" />
+    <meta
+      property="og:description"
+      content="Jasa pembuatan website modern, responsif, dan sesuai kebutuhan."
+    />
+    <meta
+      property="og:url"
+      content="https://feri-landingpage.vercel.app/"
+    />
+    <meta
+      property="og:image"
+      content="https://feri-landingpage.vercel.app/images/feri-logo.png"
+    />
+    <meta property="og:image:secure_url" content="https://feri-landingpage.vercel.app/images/feri-logo.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="FERI.DEV — Web Developer" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FERI.DEV — Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Jasa pembuatan website modern, responsif, dan sesuai kebutuhan."
+    />
+    <meta
+      name="twitter:image"
+      content="https://feri-landingpage.vercel.app/images/feri-logo.png"
+    />
   </head>
+
   <body>
     <div class="page">
       <header class="top">
@@ -37,12 +68,15 @@ const services = [
           class="logo"
           src="/images/feri-logo.png"
           alt="Logo FERI.DEV"
+          width="200"
+          height="200"
         />
 
         <p class="eyebrow">INDEPENDENT WEB DEVELOPER</p>
+
         <h1>BUILD YOUR<br />DIGITAL <span>IDEAS.</span></h1>
 
-        <p class="subtitle">WEB DESIGN & DEVELOPMENT</p>
+        <p class="subtitle">WEB DESIGN &amp; DEVELOPMENT</p>
 
         <p>
           Saya membantu bisnis dan individu membangun website modern,
@@ -65,13 +99,38 @@ const services = [
           {services.map((service) => <p>{service}</p>)}
         </div>
 
-        <div class="wave">〜〜〜〜〜〜〜〜〜</div>
+        <div class="wave" aria-hidden="true">〜〜〜〜〜〜〜〜〜</div>
 
         <nav class="socials" aria-label="Media sosial">
-          <a class="social github" href="https://github.com/ferr77" aria-label="GitHub">GH</a>
-          <a class="social portfolio" href="https://ferr77.github.io/" aria-label="Portfolio">↗</a>
-          <a class="social whatsapp" href="https://wa.me/6282232109659" aria-label="WhatsApp">WA</a>
-          <a class="social email" href="mailto:EMAIL_KAMU" aria-label="Email">@</a>
+          <a
+            class="social github"
+            href="https://github.com/ferr77"
+            aria-label="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GH</a>
+
+          <a
+            class="social portfolio"
+            href="https://ferr77.github.io/"
+            aria-label="Portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >↗</a>
+
+          <a
+            class="social whatsapp"
+            href="https://wa.me/6282232109659"
+            aria-label="WhatsApp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >WA</a>
+
+          <a
+            class="social email"
+            href="mailto:ferijuliansyah773@gmail.com"
+            aria-label="Email"
+          >@</a>
         </nav>
 
         <p class="closing" id="contact">
