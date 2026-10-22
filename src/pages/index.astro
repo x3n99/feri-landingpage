@@ -1,0 +1,81 @@
+
+---
+import "../styles/global.css";
+
+const services = [
+  "💻 Pembuatan website",
+  "🎨 Desain modern dan responsif",
+  "⚙️ Pengembangan aplikasi web",
+  "🤝 Konsultasi sesuai kebutuhan",
+];
+---
+
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#292a22" />
+    <meta name="description" content="Jasa pembuatan website oleh Feri Juliansyah." />
+    <title>FERI.DEV — Web Developer</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="top">
+        <a class="brand" href="#home">FERI.DEV</a>
+        <a class="contact-button" href="#contact">✉ Contact</a>
+      </header>
+
+      <main class="content" id="home">
+        <img
+          class="logo"
+          src="/images/feri-logo.png"
+          alt="Logo FERI.DEV"
+        />
+
+        <p class="eyebrow">INDEPENDENT WEB DEVELOPER</p>
+        <h1>BUILD YOUR<br />DIGITAL <span>IDEAS.</span></h1>
+
+        <p class="subtitle">WEB DESIGN & DEVELOPMENT</p>
+
+        <p>
+          Saya membantu bisnis dan individu membangun website modern,
+          responsif, dan sesuai kebutuhan.
+        </p>
+
+        <p>
+          Mulai dari landing page untuk memperkenalkan produk, company profile
+          untuk bisnis, hingga aplikasi web dengan fitur yang disesuaikan.
+          Setiap proyek dirancang dengan memperhatikan tampilan, fungsi,
+          dan pengalaman pengguna.
+        </p>
+
+        <p>
+          Fokus saya adalah membuat website yang tidak hanya menarik,
+          tetapi juga mudah digunakan dan memiliki tujuan yang jelas.
+        </p>
+
+        <div class="services">
+          {services.map((service) => <p>{service}</p>)}
+        </div>
+
+        <div class="wave">〜〜〜〜〜〜〜〜〜</div>
+
+        <nav class="socials" aria-label="Media sosial">
+          <a class="social github" href="https://github.com/ferr77" aria-label="GitHub">GH</a>
+          <a class="social portfolio" href="https://ferr77.github.io/" aria-label="Portfolio">↗</a>
+          <a class="social whatsapp" href="https://wa.me/6282232109659" aria-label="WhatsApp">WA</a>
+          <a class="social email" href="mailto:EMAIL_KAMU" aria-label="Email">@</a>
+        </nav>
+
+        <p class="closing" id="contact">
+          Dari ide menjadi website.<br />
+          Mari buat sesuatu yang bermanfaat.
+        </p>
+      </main>
+
+      <footer>
+        © {new Date().getFullYear()} Feri Juliansyah
+      </footer>
+    </div>
+  </body>
+</html>

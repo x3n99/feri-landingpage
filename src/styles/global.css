@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Manrope:wght@400;600;700;800&display=swap');
+
+:root {
+  font-family: 'Space Mono', monospace;
+  color: #302e2b;
+  background: #eee8db;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 28px 16px;
+  background-color: #eee8db;
+  background-image: radial-gradient(#d1c9bc 3px, transparent 3px);
+  background-size: 40px 40px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  max-width: 850px;
+  margin: auto;
+  overflow: hidden;
+  border: 5px solid #292a22;
+  border-radius: 48px 48px 0 0;
+  background: linear-gradient(145deg, #e7d8eb, #d0e5e1);
+  box-shadow: 9px 9px 0 #292a22;
+}
+
+.top {
+  padding: 32px 20px;
+  background: #292a22;
+  color: #fffaf0;
+  text-align: center;
+}
+
+.brand {
+  display: block;
+  margin-bottom: 24px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 13px 27px;
+  border: 2px solid #292a22;
+  border-radius: 15px;
+  background: #f8f4e9;
+  color: #292a22;
+  box-shadow: 5px 6px 0 #ef9ca7;
+  font-size: 15px;
+}
+
+.content {
+  padding: 48px 30px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.95;
+}
+
+.logo {
+  display: block;
+  width: 155px;
+  height: 155px;
+  margin: 0 auto 32px;
+  border: 3px solid #292a22;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 18px 0 24px;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(36px, 8vw, 65px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+h1 span {
+  color: #6b7d68;
+}
+
+.subtitle {
+  margin: 28px 0;
+  font-size: 13px;
+}
+
+.content > p:not(.eyebrow):not(.subtitle):not(.closing) {
+  margin: 24px auto;
+  max-width: 650px;
+}
+
+.services {
+  margin: 30px auto;
+  text-align: left;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.services p {
+  margin: 8px 0;
+}
+
+.wave {
+  margin: 36px 0;
+  font-size: 25px;
+  letter-spacing: -4px;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  border: 3px solid #292a22;
+  border-radius: 22px;
+  box-shadow: 5px 6px 0 #292a22;
+  font-family: 'Manrope', sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  transition: transform .2s;
+}
+
+.social:hover {
+  transform: translateY(-4px);
+}
+
+.github {
+  background: #f1a0aa;
+}
+
+.portfolio {
+  background: #f18b55;
+}
+
+.whatsapp {
+  background: #8fc19b;
+}
+
+.email {
+  background: #aaa0cd;
+}
+
+.closing {
+  margin-top: 45px;
+}
+
+footer {
+  padding: 20px;
+  border-top: 2px solid #292a22;
+  text-align: center;
+  font-size: 11px;
+}
+
+@media (min-width: 700px) {
+  body {
+    padding: 45px 24px;
+  }
+
+  .content {
+    padding: 55px 65px;
+    font-size: 16px;
+  }
+
+  .logo {
+    width: 175px;
+    height: 175px;
+  }
+}
+
+@media (max-width: 380px) {
+  body {
+    padding: 12px 8px;
+  }
+
+  .page {
+    border-radius: 30px 30px 0 0;
+  }
+
+  .content {
+    padding: 35px 18px;
+    font-size: 13px;
+  }
+
+  .social {
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+  }
+}
